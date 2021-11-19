@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Расчет срока годности</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="block">
+        <div>
+          <p><label>Дата изготовления</label></p>
+          <input type="date" min="2015-01-01">
+        </div>
+        <div>
+          <p><label>Дата</label></p>
+          <input type="date" min="2015-01-01">
+        </div>
+        <div>
+          <p><label>Дата окончания</label></p>
+          <input type="date" min="2015-01-01">
+        </div>
+      </div>
+      <div class="block">
+        <div>
+          <p><label>Срок годности/дней</label></p>
+          <input type="text" readonly size="15">
+        </div>
+        <div>
+          <p><label>Кол-во прошедших дней</label></p>
+          <input type="text" readonly size="15">
+        </div>
+        <div>
+          <p><label>Прошло в процентах</label></p>
+          <input type="text" readonly size="15">
+        </div>
+      </div>
+      <div class="btn">
+        <a href="#" class="button">Расчитать</a>
+        <p class="currentDate">fdsgdfrsgfdhgfd</p>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
